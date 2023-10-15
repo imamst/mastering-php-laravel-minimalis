@@ -1,0 +1,24 @@
+{
+    "name": "phpfw/framework",
+    "description": "Basic php framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Imam Setiawan",
+            "email": "s.imam29@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr4": {
+            "PhpFw\\Component\\": "vendor/phpfw/framework",
+            "PhpFw\\App": "app"
+        },
+        "files": ["vendor/phpfw/framework/Support/helpers.php"]
+    },
+    "require": {
+        "phpunit/phpunit": "^8.0",
+        "psr/http-message": "^1.0"
+    }
+}
